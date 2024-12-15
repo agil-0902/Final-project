@@ -1,0 +1,1485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: black;
+}
+.header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+.second-pic{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    
+}
+
+.second-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style: none;
+    padding-top: 15px;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+
+.first-section{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.first-section img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.give-flex{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.left-news{
+    width: 30%;
+    background-color: black;
+}
+
+.white-background{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.white-background a{
+    color: black;
+    font-size: 14px;
+    transition: 0.5s;
+    align-self: center;
+    padding-left: 10px;
+    
+}
+
+.white-background a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+.center-photo{
+    width: 30%;
+    height: 312px;
+    transition: 0.8s;
+}
+
+.center-photo:hover{
+    transform: rotateY(180deg);
+}
+
+.center-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+.right-page{
+    width: 30%;
+    height: 312px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.first-page{
+    width: 40%;
+    padding: 20px auto;
+}
+.person{
+    width: 100%;
+    height: 70px;
+    
+
+}
+
+.person img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+.text{
+    padding: 5px 5px;
+    width: 100%;
+    height: 80px;
+}
+
+.text h4{
+    color: #9fea00;
+    font-size: 12px;
+    padding: 4px 0 0;
+}
+
+.text p{
+    font-size: 10px;
+    color: #C9C9C9;
+}
+
+@media screen and (min-width:601px) and (max-width: 991px) {
+.menu ul li a{
+    font-size: 15px;
+}
+
+.center-photo{
+    display: none;
+}
+
+.left-news{
+    width: 40%;
+}
+
+.right-page{
+    width: 40%;
+}
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+.menu ul li a{
+    font-size: 13px;
+}
+
+.center-photo{
+    display: none;
+}
+
+.left-news{
+    width: 40%;
+}
+
+.right-page{
+    width: 40%;
+}
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+.menu ul li a{
+    font-size: 11px;
+}
+
+.center-photo{
+    display: none;
+}
+
+.left-news{
+    width: 40%;
+}
+
+.right-page{
+    width: 40%;
+}
+}
+
+.another-section{
+    width: 95%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.left-spot{
+    width: 15%;
+    height: 370px;
+}
+
+.left-spot h2{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 2px;
+ 
+}
+
+p.date{
+    font-size: 9px;
+    color: #93DE3C;
+}
+
+p.about{
+    color: #fff;
+    font-size: 12px;
+}
+
+.give-column{
+    display: flex;
+    flex-direction: column;
+}
+.give-padding{
+    padding: 5px 0px;
+}
+
+.left-spot a{
+    color: #909090;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-spot{
+    width: 65%;
+    height: 519px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-three{
+    display: flex;
+    justify-content: space-evenly;
+}
+.one-of-three{
+    width: 30%;
+    height: 228px;
+    background-image: url(./img/grey-box.gif);
+    border-radius: 10px;
+    
+}
+
+.one-of-three .one-of a{
+    color: #303235;
+    font-size: 13px;
+    padding: 0px 0px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one-of{
+    padding: 5px;
+}
+.img-next{
+    width: 80%;
+    height: 105px;
+    padding: 5px;
+    display: flex;
+
+}
+
+.img-next img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.new-span span{
+    color: #1F1F1F;
+    padding: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.read{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.read a button{
+    font-size: 10px;
+    color: #373737;
+    padding: 3px 0 0;
+}
+
+.down-four{
+    width: 85%;
+    height: 191px;
+    background-image: url(./img/video-box.gif);
+    margin-top: 30px;
+}
+
+.two-text{
+    display: flex;
+    justify-content: space-between;
+}
+.two-text h2{
+    color: #fff;
+    padding: 0 0 10px;
+    font-size: 16px;
+}
+
+.two-text a button{
+    color: #373737;
+    font-size: 10px;
+    padding: 3px;
+}
+
+.watch-now{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.part{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.carlos{
+    width: 25%;
+    height: 60px;
+    
+}
+
+.carlos img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.info-about-carlos{
+    width: 70%;
+}
+
+.info-about-carlos p{
+    color: #f9f9f9;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.info-about-carlos a{
+    color: #9FEA00;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+.make-none{
+    display: none;
+}
+
+.one-of-three{
+    width: 47%;
+    height: 230px;
+}
+
+.one, .two{
+    display: none;
+}
+.part{
+    width: 80%;
+}
+.watch-now{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-tree{
+    justify-content: space-between;
+}
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+.make-none{
+    display: none;
+}
+
+.one-of-three{
+    width: 48%;
+    height: 180px;
+}
+
+.one, .two{
+    display: none;
+}
+.part{
+    width: 80%;
+}
+.watch-now{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.up-tree{
+    justify-content: space-between;
+}
+
+.one-of-three .one-of a{
+    font-size: 9px;
+}
+
+.new-span span{
+    font-size: 6px;
+    }
+
+.img-next{
+    height: 60px;
+}
+
+.read a button{
+    font-size: 6px;
+}
+
+.read{
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.distance h2{
+    font-size: 12px;
+}
+
+.distance a button {
+    font-size: 8px;
+}
+
+.info-about-carlos p{
+    font-size: 10px;
+    margin: 0px;
+}
+
+.info-about-carlos a{
+    font-size: 8px;
+}
+
+.carlos{
+    height: 40px;
+}
+}
+
+.first-black{
+    width: 100%;
+    height: 803px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.go-left{
+    margin-top: 50px;
+    width: 90%;
+    height: 4700px;
+    display: flex;
+    flex-direction: column;
+    background-color:  black;
+  
+
+}
+.fifa-2018{
+    width: 20%;
+    height: 91px;
+
+}
+
+.fifa-2018 img{
+    width: 100%;
+    height: 100%;
+}
+
+.big-pic{
+    width: 60%;
+    align-self: flex-end;
+    align-items: end;
+    height: 510px;
+    transition: 0.5s;
+}
+
+.big-pic:hover{
+    transform: scale(0.5);
+}
+
+.big-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.red-box{
+    width: 60%;
+    height: 350px;
+    background-color: rgb(233, 69, 69);
+    border-radius: 20px;
+}
+
+.red-box h1{
+    color: white;
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    padding: 15px;
+    width: 98%;
+}
+
+.red-box p{
+    color: white;
+    font-size: 16px;
+    align-self: flex-end;
+    font-family:"Roboto", sans-serif;
+    padding: 15px;
+}
+
+.red-box img{
+    width: 47px;
+    height: 47px;
+    
+}
+
+.another-flex{
+    width: 95%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.another-flex .for-guardian{
+    width: 35px;
+    height: 35px;
+}
+
+.another-flex .for-guardian img{
+    width: 100%;
+    height: 100%;
+}
+
+.all-you-need{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.biographies, .mohammed, .akinfeev, .stadiums{
+    width: 45%;
+    height: 447px;
+    color: white;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.mohammed, .akinfeev, .red-photo{
+    position: relative;
+    transition: 0.5s;
+    
+}
+
+.mohammed:hover{
+    transform: scale(0.5);
+}
+
+.akinfeev:hover{
+    transform: scale(0.5);
+}
+
+.red-photo:hover{
+    transform: scale(0.5);
+}
+.biographies h2{
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.biographies p{
+    letter-spacing: 2px;
+}
+
+.mohammed img{
+    width: 100%;
+    height: 100%;
+}
+
+.akinfeev img{
+    width: 100%;
+    height: 100%;
+}
+
+.stadiums {
+    display: flex;
+    flex-direction: column;
+}
+.stadiums h2{
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    width: 80%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.stadiums p{
+    letter-spacing: 2px;
+}
+
+.stadiums a{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: block;
+    margin-top: 45px;
+    align-self: flex-end;
+}
+
+.first-game{
+    width: 100%;
+    height: 688px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.opening-match {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.red-info{
+    width: 100%;
+}
+.red-info h2{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.red-photo{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.red-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.celebrate{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.make-flex{
+    display: flex;
+    margin-top: 70px;
+}
+
+.getty, .score{
+    width: 100%;
+   
+}
+
+.getty p{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+
+.getty h1{
+    color: white;
+    font-size: 146px;
+    font-family: "Roboto", sans-serif;
+}
+
+.score h2{
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.score p{
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.score-two h2{
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.new-box{
+    width: 80%;
+    height: 100px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.animation{
+    width: 25%;
+    height: 100%;
+    background-color: green;
+    animation-name: to-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes to-right {
+    0%{
+    background-color: blue;
+    border-radius: 50%;
+    
+    }
+    25%{
+    background-color: greenyellow;
+    border-radius: 100%;
+    transform: translate(100%);
+    transform: rotate(360deg);
+   
+    }
+    50%{
+    background-color: purple;
+
+    }
+    75%{
+    height: 80%;
+    background-color: teal;
+    transform: translate(100%);
+
+    }
+    100%{
+    background-color: grey;
+    transform: rotate(360deg);
+
+    }
+}
+
+.another-animation{
+width: 25%;
+height: 100%;
+background-color: green;
+animation-name: to-left;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes to-left {
+    0%{
+    background-color: blue;
+    border-radius: 50%;
+        
+    }
+    25%{
+    background-color: greenyellow;
+    border-radius: 100%;
+    transform: translate(100%);
+    transform: rotate(360deg);
+       
+    }
+    50%{
+    background-color: purple;
+    
+    }
+    75%{
+    height: 80%;
+    background-color: aqua;
+    transform: translate(100%);
+    
+    }
+    100%{
+    background-color: grey;
+    transform: rotate(360deg);
+    
+    }
+}
+
+
+.ready{
+    width: 100%;
+    height: 286px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.subscribe{
+    width: 45%;
+    margin-top: 50px;
+    height: 270px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.subscribe h2{
+    font-size: 36px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.circle{
+    width: 20%;
+    margin-top: 30px;
+    height: 260px;
+}
+
+.circle img{
+    width: 100%;
+    height: 100%;
+}
+
+.hierro{
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.left-hierro{
+    width: 40%;
+    height: 465px;
+}
+
+.right-hierro{
+    width: 50%;
+}
+
+.ramos{
+    width: 100%;
+}
+
+.ramos-up{
+    width: 95%;
+}
+.left-hierro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.ramos-up h2{
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    font-family: "Roboto", sans-serif;
+    margin: 25px 0px;
+}
+
+.ramos-up p{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1.5px;
+    margin: 25px 0px;
+}
+
+.look{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-look, .right-look{
+    width: 50%;
+    height: 359px;
+}
+
+.left-look p{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.right-look p{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 25px;
+}
+
+.right-look a{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-family: "Roboto", sans-serif;
+}
+
+.uruguay-team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.interview{
+    width: 45%;
+    height: 685px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.interview h2{
+    font-size: 36px;
+}
+
+.interview p{
+    font-size: 16px;
+
+}
+
+.interview p a{
+    color: #F9B7B3;
+
+}
+
+.as-the-team{
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+.diego{
+    width: 45%;
+    height: 685px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.italic{
+    margin-top: 20px;
+}
+.defender{
+    width: 95%;
+    height: 326px;
+}
+
+.give-height{
+    height: 326px;
+}
+
+.defender img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.diego p{
+    font-size: 16px;
+}
+
+p.left-line{
+    border-left:2px solid red;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.two-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-text{
+    margin-top: 20px;
+}
+
+.daily {
+    width: 100%;
+    height: 680px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.twenty, .five-star{
+    width: 45%;
+    height: 457px;
+}
+
+.twenty img{
+    width: 100%;
+    height: 100%;
+}
+
+.five-star h2{
+font-size: 36px;
+margin: 50px 0px;
+
+}
+
+.five-star p{
+    margin: 20px 0px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-left: 2px solid red;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    font-size: 16px;
+}
+
+.five-star a{
+    font-size: 16px;
+    display: block;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width:601px) and (max-width: 991px) {
+.red-box{
+    display: none;
+}
+
+.biographies h2{
+    font-size: 25px;
+}
+
+.biographies p{
+    font-size: 13px;
+}
+
+.stadiums h2{
+    width: 100%;
+    font-size: 34px;
+    margin-top: 25px;
+}
+
+.red-info h2{
+    font-size: 27px;
+}
+
+
+.score h2{
+    font-size: 28px;
+    width: 100%;
+}
+
+.score-two h2{
+    font-size: 28px;
+    width: 100%;
+}
+
+.score p{
+    font-size: 14px;
+}
+
+.celebrate{
+    width: 40%;
+    height: 100%;
+}
+
+.first-game{
+    height: 620px;
+}
+
+.opening-match{
+    height: 100%;
+}
+
+.left-hierro{
+    height: 300px;
+}
+
+.ramos-up h2{
+    font-size: 25px;
+}
+
+.ramos-up p{
+    font-size: 14px;
+}
+
+.left-look p{
+    font-size: 12px;
+}
+
+.right-look p{
+    font-size: 12px;
+}
+
+.right-look a{
+    font-size: 12px;
+    display: block;
+    margin-top: 50px;
+}
+
+.give-height{
+    height: 250px;
+}
+.give-height h2{
+    font-size: 25px;
+}
+
+.defender{
+    height: 250px;
+}
+p.as-the-team{
+    font-size: 14px;
+}
+
+p.first-text{
+    font-size: 14px;
+}
+
+p.left-line{
+    font-size: 14px;
+}
+
+.uruguay-team{
+    height: 665px;
+}
+
+.twenty{
+    height: 280px;
+    width: 40%;
+}
+
+.five-star{
+    margin-bottom: 50px;
+}
+.five-star h2{
+    font-size: 25px;
+}
+
+.five-star p{
+    font-size: 14px;
+}
+
+.five-star ul{
+    display: none;
+}
+
+.daily{
+    height: 480px;
+}
+
+.go-left{
+    height: 4100px;
+}
+
+.big-pic{
+    height: 400px;
+}
+
+.mohammed, .akinfeev{
+    height: 350px;
+}
+
+.circle{
+    height: 180px;
+}
+
+.subscribe h2{
+    font-size: 25px;
+}
+
+.subscribe a{
+    display: block;
+    margin-top: 20px;
+}
+
+.getty{
+    display: block;
+}
+
+.getty p{
+    display: block;
+}
+
+.getty h1{
+    font-size: 80px;
+}
+
+}
+
+@media screen and (min-width: 300px) and (max-width:600px) {
+.first-black{
+    margin-top: 100px;
+}
+
+.fifa-2018{
+    height: 65px;
+}
+
+.big-pic{
+    width: 100%;
+}
+
+.getty{
+    display: none;
+}
+
+.red-box, .biographies{
+    display: none;
+}
+
+.all-you-need{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mohammed, .akinfeev{
+    height: 200px;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.stadiums{
+    width: 100%;
+    height: 200px;
+}
+.stadiums h2{
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stadiums a{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.all-you-need{
+    height: 730px;
+}
+
+.red-info{
+    display: none;
+}
+
+.celebrate{
+    width: 50%;
+}
+
+.first-game{
+    height: 290px;
+}
+
+.opening-match{
+    height: 90px;
+}
+
+.score h2{
+    font-size: 23px;
+}
+
+.score p{
+    font-size: 13px;
+}
+
+.score-two h2{
+    font-size: 23px;
+}
+
+.make-flex{
+    margin-top: 20px;
+}
+
+.subscribe{
+    margin-top: 0px;
+    height: 100%;
+}
+
+.subscribe h2{
+    font-size: 25px;
+    width: 100%;
+}
+
+.subscribe a{
+    display: block;
+    margin-top: 10px;
+}
+
+.circle{
+    width: 35%;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.new-box{
+    margin-top: 100px;
+}
+.ready{
+    height: 170px;
+    margin-top: 160px;
+}
+
+.getty{
+    display: block;
+    margin-top: 20px;
+}
+
+.getty h1{
+    font-size: 60px;
+}
+
+.getty p{
+    display: none;
+}
+
+.hierro{
+    flex-direction: column;
+}
+
+.left-hierro{
+    width: 100%;
+}
+
+.right-hierro{
+    width: 100%;
+}
+
+.ramos-up h2{
+    font-size: 23px;
+}
+
+.left-look{
+    height: 200px;
+}
+
+.right-look{
+height: 200px;
+}
+.left-look p{
+    font-size: 12px;
+    width: 100%;
+}
+
+.right-look p{
+    font-size: 12px;
+    width: 100%;
+}
+
+.uruguay-team{
+    margin-top: 200px;
+}
+
+.give-height h2{
+    font-size: 18px;
+    width: 100%;
+}
+
+.defender{
+    height: 200px;
+}
+
+.two-text p{
+    font-size: 12px;
+}
+
+.give-height{
+    height: 165px;
+    margin-bottom: 55px;
+}
+
+p.as-the-team{
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+p.italic{
+    margin-bottom: 10px;
+}
+
+.daily{
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.twenty{
+    display: flex;
+    align-self: center;
+    width: 70%;
+    height: 180px;
+    margin-top: 100px;
+}
+
+.five-star{
+    width: 95%;
+}
+.five-star h2{
+    font-size: 23px;
+}
+
+.five-star p{
+    font-size: 14px;
+}
+
+.five-star ul li{
+    font-size: 14px;
+}
+
+.five-star a{
+    font-size: 14px;
+}
+
+.go-left{
+    height: 4400px;
+}
+
+}
